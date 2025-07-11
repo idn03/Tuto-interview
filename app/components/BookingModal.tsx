@@ -14,6 +14,7 @@ import {
     ScrollView,
     Alert,
     Platform,
+    KeyboardAvoidingView,
 } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import DateTimePicker from '@react-native-community/datetimepicker';
@@ -158,7 +159,11 @@ const BookingModal: React.FC<BookingModalProps> = ({
             transparent={true}
             onRequestClose={onClose}
         >
-            <View style={styles.modalOverlay}>
+            <KeyboardAvoidingView
+                style={styles.modalOverlay}
+                behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+                keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 20}
+            >
                 <View style={[styles.modalContent, { backgroundColor: colors.background }]}>
                     {/* Header */}
                     <View style={[styles.modalHeader, spacings.ph5, spacings.pv4]}>
@@ -170,7 +175,12 @@ const BookingModal: React.FC<BookingModalProps> = ({
                         </TouchableOpacity>
                     </View>
 
-                    <ScrollView style={[spacings.ph5, spacings.pv4]} showsVerticalScrollIndicator={false}>
+                    <ScrollView
+                        style={[spacings.ph5, spacings.pv4]}
+                        showsVerticalScrollIndicator={false}
+                        keyboardShouldPersistTaps="handled"
+                        contentContainerStyle={{ flexGrow: 1 }}
+                    >
                         {/* Teacher Info */}
                         <View style={[styles.teacherInfo, spacings.mb5, { backgroundColor: colors.primary + '10' }]}>
                             <Text style={[globalStyles.textBold, { color: colors.primary }]}>
@@ -196,6 +206,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
                                 onChangeText={(value) => handleInputChange('studentName', value)}
                                 placeholder="Enter student name"
                                 placeholderTextColor={colors.textLight}
+                                returnKeyType="next"
                             />
                         </View>
 
@@ -215,6 +226,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
                                 placeholder="Enter age"
                                 placeholderTextColor={colors.textLight}
                                 keyboardType="numeric"
+                                returnKeyType="next"
                             />
                         </View>
 
@@ -260,6 +272,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
                                 placeholder="e.g., Monday, Wednesday, Friday"
                                 placeholderTextColor={colors.textLight}
                                 multiline
+                                returnKeyType="done"
                             />
                         </View>
                     </ScrollView>
@@ -293,7 +306,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
                         maximumDate={new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)}
                     />
                 )}
-            </View>
+            </KeyboardAvoidingView>
 
             {/* iOS Date Picker Modal */}
             {showIOSDatePicker && Platform.OS === 'ios' && (
