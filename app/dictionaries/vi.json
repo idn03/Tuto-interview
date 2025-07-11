@@ -7,5 +7,12 @@
     "learningDays": "Ngày học",
     "submit": "Gửi",
     "success": "Đặt lịch thành công!",
-    "language": "Ngôn ngữ"
+    "language": "Ngôn ngữ",
+    "filterBySubject": "Lọc theo môn học",
+    "allSubjects": "Tất cả môn học",
+    "perHour": "mỗi giờ",
+    "rating": "Đánh giá",
+    "experience": "Kinh nghiệm",
+    "location": "Địa chỉ",
+    "fee": "Học phí"
 }

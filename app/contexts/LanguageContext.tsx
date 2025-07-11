@@ -1,6 +1,6 @@
 import React, { createContext, useState, useContext, ReactNode } from 'react';
-import en from '../dictionaries/en.json';
-import vi from '../dictionaries/vi.json';
+import en from '@dictionaries/en.json';
+import vi from '@dictionaries/vi.json';
 
 type Language = 'en' | 'vi';
 type Dictionary = typeof en;

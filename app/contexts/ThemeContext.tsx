@@ -25,9 +25,9 @@ interface ThemeContextProps {
 
 const defaultTheme: ThemeContextProps = {
     fonts: {
-        regular: 'Roboto-Regular',
-        medium: 'Roboto-Medium',
-        bold: 'Roboto-Bold',
+        regular: 'System',
+        medium: 'System',
+        bold: 'System',
     },
     fontSizes: {
         small: 12,
@@ -37,11 +37,11 @@ const defaultTheme: ThemeContextProps = {
         xlarge: 20,
     },
     colors: {
-        primary: '#007AFF',
-        secondary: '#5856D6',
-        background: '#FFFFFF',
-        text: '#000000',
-        textLight: '#666666',
+        primary: '#555879',
+        secondary: '#98A1BC',
+        background: '#EEEEEE',
+        text: '#0C0C0C',
+        textLight: '#0C0C0C80',
         border: '#E5E5E5',
     },
 };

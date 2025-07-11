@@ -4,12 +4,12 @@ import { ThemeProvider } from './contexts/ThemeContext';
 import Router from './Router';
 
 export default function App() {
-    return (
-        <ThemeProvider>
-            <LanguageProvider>
-                <Router />
-                <StatusBar style="auto" />
-            </LanguageProvider>
-        </ThemeProvider>
-    );
+  return (
+    <ThemeProvider>
+      <LanguageProvider>
+        <Router />
+        <StatusBar style="auto" />
+      </LanguageProvider>
+    </ThemeProvider>
+  );
 }

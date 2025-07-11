@@ -1,7 +1,7 @@
 import { TextStyle, ViewStyle, StyleSheet } from 'react-native';
 
 export const globalTextStyles: TextStyle = {
-    fontFamily: 'Roboto-Regular',
+    fontFamily: 'System',
     fontSize: 14,
     color: '#0C0C0C',
 };
@@ -10,27 +10,18 @@ export const globalStyles = {
     text: globalTextStyles,
     textMedium: {
         ...globalTextStyles,
-        fontFamily: 'Roboto-Medium',
+        fontWeight: '500' as const,
     },
     textBold: {
         ...globalTextStyles,
-        fontFamily: 'Roboto-Bold',
-    },
-    textSmall: {
-        ...globalTextStyles,
-        fontSize: 12,
-    },
-    textLarge: {
-        ...globalTextStyles,
-        fontSize: 16,
-    },
-    textXLarge: {
-        ...globalTextStyles,
-        fontSize: 18,
+        fontWeight: '700' as const,
     },
     container: {
         flex: 1,
-        backgroundColor: '#FFFFFF',
+        backgroundColor: '#EEEEEE',
+    } as ViewStyle,
+    row: {
+        flexDirection: 'row'
     } as ViewStyle,
 };
 

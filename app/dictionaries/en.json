@@ -7,5 +7,12 @@
     "learningDays": "Learning Days",
     "submit": "Submit",
     "success": "Booking Successful!",
-    "language": "Language"
+    "language": "Language",
+    "filterBySubject": "Filter by Subject",
+    "allSubjects": "All Subjects",
+    "perHour": "per hour",
+    "rating": "Rating",
+    "experience": "Experience",
+    "location": "Location",
+    "fee": "Fee"
 }

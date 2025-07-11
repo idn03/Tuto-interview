@@ -4,11 +4,12 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["components/*"],
-      "@screens/*": ["screens/*"],
-      "@mock/*": ["mock/*"],
-      "@dictionaries/*": ["dictionaries/*"],
-      "@contexts/*": ["contexts/*"],
+      "@components/*": ["app/components/*"],
+      "@screens/*": ["app/screens/*"],
+      "@mock/*": ["app/mock/*"],
+      "@dictionaries/*": ["app/dictionaries/*"],
+      "@contexts/*": ["app/contexts/*"],
+      "@utils/*": ["app/utils/*"],
       "@app/*": ["app/*"]
     }
   }
