@@ -21,7 +21,8 @@ export const globalStyles = {
         backgroundColor: '#EEEEEE',
     } as ViewStyle,
     row: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems: 'center'
     } as ViewStyle,
 };
 

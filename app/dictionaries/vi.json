@@ -14,5 +14,10 @@
     "rating": "Đánh giá",
     "experience": "Kinh nghiệm",
     "location": "Địa chỉ",
-    "fee": "Học phí"
+    "fee": "Học phí",
+    "booked": "Đã đặt",
+    "student": "Học sinh",
+    "yearsOld": "tuổi",
+    "trial": "Học thử",
+    "days": "Ngày"
 }

@@ -14,5 +14,10 @@
     "rating": "Rating",
     "experience": "Experience",
     "location": "Location",
-    "fee": "Fee"
+    "fee": "Fee",
+    "booked": "Booked",
+    "student": "Student",
+    "yearsOld": "years old",
+    "trial": "Trial",
+    "days": "Days"
 }

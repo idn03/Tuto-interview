@@ -80,7 +80,7 @@ export const mockTeachers: Teacher[] = [
             en: 'District 3, Ho Chi Minh City',
             vi: 'Quận 3, TP. Hồ Chí Minh'
         },
-        rating: 4.9,
+        rating: 3.9,
         fee: {
             amount: 400000,
             currency: 'VND',
@@ -113,7 +113,7 @@ export const mockTeachers: Teacher[] = [
             en: 'District 7, Ho Chi Minh City',
             vi: 'Quận 7, TP. Hồ Chí Minh'
         },
-        rating: 4.7,
+        rating: 1.7,
         fee: {
             amount: 450000,
             currency: 'VND',
@@ -146,7 +146,7 @@ export const mockTeachers: Teacher[] = [
             en: 'District 2, Ho Chi Minh City',
             vi: 'Quận 2, TP. Hồ Chí Minh'
         },
-        rating: 4.6,
+        rating: 3.6,
         fee: {
             amount: 480000,
             currency: 'VND',
@@ -172,14 +172,14 @@ export const mockTeachers: Teacher[] = [
             vi: 'Michael Brown'
         },
         subject: {
-            en: 'Computer Science',
-            vi: 'Khoa học Máy tính'
+            en: 'Mathematics',
+            vi: 'Toán học'
         },
         location: {
             en: 'District 9, Ho Chi Minh City',
             vi: 'Quận 9, TP. Hồ Chí Minh'
         },
-        rating: 4.9,
+        rating: 2.9,
         fee: {
             amount: 600000,
             currency: 'VND',
